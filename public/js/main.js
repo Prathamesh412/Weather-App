@@ -32,7 +32,7 @@ const getInfo = async(event) =>{
         datahide.classList.add("data_hide");
     }else{
         try{
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=63143994ee22b2feda7d10a606b21c35`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=63143994ee22b2feda7d10a606b21c35`
             const response = await fetch(url)
             const weatherData = await response.json();
 
@@ -111,7 +111,7 @@ navigator.geolocation.getCurrentPosition((position) => {
     var latitude = position.coords.latitude
     var longitude = position.coords.longitude
     const getInfo1 = async() =>{
-        let url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=63143994ee22b2feda7d10a606b21c35`
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=63143994ee22b2feda7d10a606b21c35`
         const response = await fetch(url)
         const weatherData = await response.json();
         const data = [weatherData];
