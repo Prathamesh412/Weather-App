@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+<body>
+    <%- include('partials/navbar') %>
+
+
+    <!-- Main Header -->
+
+  <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="city" name="city" placeholder="Enter the name of the city" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day"></p>
+                        <p id="today_date"></p>
+                    </div>
+                    <div class="main_layer data_hide">
+                        <p id="city_name">Get Output city</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_real">0</span> <sup>o</sup>C</p>
+                            <p id="temp_status"> <i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                    <div class="top_layer2 data_hide">
+                        <div class="row">
+                            <div class="col-4">Feels Like</div>
+                            <div class="col-4">Max</div>
+                            <div class="col-4">Min</div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-4" id="feels_like"></div>
+                            <div class="col-4" id="max_temp"></div>
+                            <div class="col-4" id="min_temp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+
+    <script src="js/main.js"></script>
+    <style>
+        .extras{
+                color: #fff;
+    font-weight: 300;
+    font-size: 1.7rem;
+        }
+    </style>
+</body>
+</html>

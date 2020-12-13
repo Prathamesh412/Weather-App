@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap and font awesome css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    
+     <!-- Bootstrap Js external files  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <!-- Local css images and js files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg rounded mb-4">
+                    <a class="navbar-brand" href="#"><i class="fas fa-snowflake"></i> Weather App <i class="fas fa-snowflake"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+             </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to Weather App</p>
+                        <h1>Get the latest <span style="color: cornflowerblue;">Weather</span> Info for your city</h1>
+                        <a href="/weather">
+                            <button class="txt_clr">Weather</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12 main_header_right">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img class="w-100" src="images/bg1.png" alt="Los Angeles">
+                                </div>
+
+                                <div class="carousel-item">
+                                <img class="w-100" src="images/bg2.png" alt="Chicago">
+                                </div>
+
+                                <div class="carousel-item">
+                                <img class="w-100" src="images/bg3.png" alt="New York">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>
+            created with ❤ by SemperFi
+        </p>
+    </footer>
+</body>
+</html>
